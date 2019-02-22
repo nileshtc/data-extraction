@@ -1,0 +1,19 @@
+<div class="container">
+  <form action="post" (ngSubmit)="processForm()">
+    <div class="form group">
+      <div class="form">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" class="from-control" [(ngModel)]="user.firstname" >
+      </div>
+      <div class="form">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" class="from-control" [(ngModel)]="user.lastname" >
+      </div>
+      <div class="form">
+        <label for="email">Email</label>
+        <input type="text" name="email" class="from-control" [(ngModel)]="user.email" >
+      </div>
+      <input type="submit" value="Save" class="btn"/>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Operations</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.firstname}}</td>
+      <td>{{user.lastname}}</td>
+      <td>{{user.email}}</td>
+      <td><button class="btn" (click)="deleteUser(user)">Delete</button><button class="btn" (click)=updateUser(user)>Edit</button></td>
+    </tr>
+    <button class="btn" (click)="createUser()">New User</button>
+  </tbody>
+</table>1
